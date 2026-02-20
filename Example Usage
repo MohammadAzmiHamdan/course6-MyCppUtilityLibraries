@@ -1,0 +1,15 @@
+#include "MyUtilities.h"
+
+int main() {
+    int numbers[100];
+    int length;
+
+    MyArrayUtilityLib::ReadArray(numbers, length);
+    MyArrayUtilityLib::PrintArray(numbers, length);
+
+    std::cout << "Max: " << MyArrayUtilityLib::MaxNumberInArray(numbers, length) << "\n";
+    std::cout << "Random Number: " << MyRandomUtilityLib::RandomIntNumber(1, 100) << "\n";
+    std::cout << "Is 5 Prime? " << (MyMathUtilityLib::IsPrime(5) ? "Yes" : "No") << "\n";
+
+    return 0;
+}
