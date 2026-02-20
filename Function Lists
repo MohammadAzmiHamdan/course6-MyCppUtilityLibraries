@@ -1,0 +1,54 @@
+Function Lists:
+=======================
+MyMathUtilityLib
+/*IsEven                     IsDivisible
+IsOdd                        Swap
+IsPrime                      MyABS
+Factorial                    GetFractionPart
+IsPerfect                    MyRound
+ReverseNumber                MyFloor
+SumDigits                    MyCeil
+IsPalindrome                 MySqrt
+*/
+===================
+MyRandomUtilityLib
+/*InitializeRandom           GetRandomCharacter
+RandomIntNumber              GenerateWord
+RandomZeroOrOne              GenerateKey
+RandomBool                   GenerateKeys
+RollDice
+*/
+=====================
+MyInputOutputLib
+/*ReadNumberInRange         PrintHeader
+ReadNumber                  PrintError
+ReadPositiveNumber          PrintSuccess
+ReadCharacter               PrintLineWithBorder
+ReadYesNo                   PrintMenu
+ReadEvenNumber              PrintTable
+ReadOddNumber               PrintCountdown
+ReadPrimeNumber             PrintProgressBar
+ReadMenuChoice              AskAndPrint
+Printl                      PrintYesNoResult
+Print                       PrintColored
+PrintNumber
+SetColor
+*/
+============================
+MyArrayUtilityLib
+/*ReadArray                 FindNumberPositionInArray
+PrintArray                  IsNumberInArray
+FillArrayWithRandomNumbers  AddArrayElement
+MaxNumberInArray            InputUserNumbersInArray
+MinNumberInArray            CopyOddNumbers
+SumArray                    CopyPrimeNumbers
+ArrayAverage                CopyDistinctNumbersToArray
+CopyArray                   IsPalindromeArray
+CopyOnlyPrimaryNumbers      OddCount
+SumOf2Arrays                EvenCount
+FillArrayWith1toN           PositiveCount
+ShuffleArray                NegativeCount
+CopyArrayInReverseOrder    FillArrayWithKeys
+PrintStringArray            FillArrayWithRandomNumbersFromUser
+
+*/
