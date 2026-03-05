@@ -6,9 +6,12 @@ A set of **C++ utility libraries** for faster development and reuse.
 These libraries include:
 
 - **Math Utilities** – basic math functions, factorial, prime checks, palindrome, rounding, square root, etc.
-- **Random Utilities** – random numbers, characters, words, passwords, dice rolls, keys
-- **Input/Output Utilities** – reading numbers, characters, menus, yes/no input, colored console output
+- **Random Utilities** – random numbers, characters, words, passwords, dice rolls, keys ,etc.
+- **Input/Output Utilities** – reading numbers, characters, menus, yes/no input, colored console output etc.
 - **Array Utilities** – read, print, shuffle, copy, sum, average, odd/even/positive/negative count, palindrome check, and more
+- **MyFilesUtilityLib** -LoadDataFromFileToVector, PrintFileContent, SaveVectorToFile ,DeleteRecordFromFile , UpdateRecordInFile ,and more 
+
+
 
 ## How to Use
 
