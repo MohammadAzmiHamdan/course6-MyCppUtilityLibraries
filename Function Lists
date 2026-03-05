@@ -52,3 +52,16 @@ CopyArrayInReverseOrder    FillArrayWithKeys
 PrintStringArray            FillArrayWithRandomNumbersFromUser
 
 */
+============
+MyFilesUtilityLib : 
+LoadDataFromFileToVector
+
+PrintFileContent
+
+SaveVectorToFile
+
+DeleteRecordFromFile
+
+UpdateRecordInFile
+
+إ
