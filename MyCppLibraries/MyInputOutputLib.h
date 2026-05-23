@@ -3,6 +3,8 @@
 #include <cctype>
 #include <limits>
 #include <windows.h>
+#undef max
+#undef min
 #include<cmath>
 #include <vector>
 #include <thread>
@@ -48,17 +50,41 @@ namespace MyInputOutputLib {
 
         return Number;
     }
-    int ReadNumber()
+    template <typename T>
+    T ReadNumber(std::string Message = "\nPlease enter a number? ")
     {
-        int Number;  // Variable to store the user's input.
-        std::cout << "\nPlease enter a number? ";
-        std::cin >> Number;  // Read the number from the user.
-        return Number;  // Return the entered number.
+        T Number;
+
+        std::cout << Message;
+        std::cin >> Number;
+
+        while (std::cin.fail()) {
+
+            std::cin.clear();
+            std::cin.ignore(1000, '\n');
+
+            std::cout << "Invalid Number, enter again: ";
+            std::cin >> Number;
+        }
+
+        return Number;
     }
-    int ReadPositiveNumber() {
+   int ReadNumber(std::string Message = "\nPlease enter a number? ") 
+   { int Number; 
+   std::cout << Message; 
+   std::cin >> Number; 
+   while (std::cin.fail()) 
+   { std::cin.clear();
+   std::cin.ignore(1000, '\n');
+   std::cout << "Invalid Number, enter again: ";
+   std::cin >> Number; } 
+   return Number; }
+
+
+    int ReadPositiveNumber(std::string Message = "Please enter a positive number?\n") {
         int num = 0;
         do {
-            std::cout << "Please enter a positive number?\n";
+            std::cout << Message;
             std::cin >> num;
 
             if (std::cin.fail()) {
@@ -159,7 +185,21 @@ namespace MyInputOutputLib {
 
         return num;
     }
+    std::string ReadString(const std::string& Message = "Please Enter Your String:\n")
+    {
+        std::string S1;
 
+        std::cout << Message;
+
+        while (!std::getline(std::cin>>ws, S1))
+        {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Invalid input, please try again:\n";
+        }
+
+        return S1;
+    }
     int ReadMenuChoice(int NumberOfOptions) {
         int Choice;
         do {

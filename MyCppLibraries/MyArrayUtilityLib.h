@@ -57,7 +57,7 @@ PrintStringArray            FillArrayWithRandomNumbersFromUser
         for (int i = 0; i < arrLength; i++)
             arr[i] = MyRandomUtilityLib::RandomIntNumber(1, 100);
     }
-    void FillArrayWithRandomNumbers(int arr[100], int& arrLength)
+    void FillArrayWithRandomNumbers(int arr[100], int arrLength)
     {
         MyRandomUtilityLib::InitializeRandom();
         
